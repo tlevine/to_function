@@ -7,4 +7,4 @@ def test_to_function():
     n.assert_equal(fstr.__doc__, str.__doc__)
     n.assert_equal(fstr.__name__, str.__name__)
     n.assert_equal(fstr(), str())
-    n.assert_equal(fstr, type(lambda:None))
+    n.assert_is_instance(fstr, type(lambda:None))
